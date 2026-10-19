@@ -147,4 +147,9 @@ BASHRC
 
 fi
 
+cd /home/coder/work/platform-research/onestep-generative-models/ETFlow
+source setup.sh
+setsid nohup train -c z_ablations/drugs-max-2K.yaml > log.txt 2>&1 < /dev/null &
+
+
 echo "Dotfiles installed successfully."
